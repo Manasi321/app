@@ -1,0 +1,430 @@
+.navbar {
+  padding: 10px 0;
+  background: #0a4458;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+.cross{
+  z-index: 99;
+  position: absolute;
+  top:40;
+  right: 185px;
+  overflow: hidden;
+  font-size: 32px;
+  display: none;
+}
+.cross i{
+  color: white;
+  background: red;
+  border-radius: 51%;
+  transition: 1s;
+}
+.cross i:hover{
+  color: red;
+  background: white;
+}
+
+.input{
+  width:40%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.input input{
+  width: 100%;
+ height: 100%;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.input input::placeholder{
+  text-align: center;
+}
+
+.input span{
+   border-top-left-radius: 9px;
+   border-bottom-left-radius: 9px;
+   outline: none;
+   background-color: white;
+   width: 10%;
+   height: 95%;
+   display: flex;  
+   align-items: center;
+   justify-content: center;
+   border-right: none;
+}
+
+.input span i{
+  color: black;
+}
+.input span:hover{
+  border: 2px solid orangered;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.input input:hover{
+  border: 2px solid orangered;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+.input input:focus{
+  border: 2px solid orangered;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  outline: none;
+  
+}
+/* Cart Button */
+.cart-button{
+  height: 100%;
+  background: transparent;
+  color: white;
+  border: none;
+  width: 4%;
+  margin-right: 1px;
+}
+
+.input i{
+  color: white;
+}
+
+.logo{
+  margin-left: 3rem;
+  width: 9%;
+  height: 80%;
+  
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  border-radius: .3rem;
+}
+.sign-in p{
+  padding-top: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: .8rem;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.border2{
+  transition: .4s ease;
+}
+
+
+.border2:hover{
+  border: 1px solid white;
+  background: rgb(48, 48, 48) ;
+  height: 100%;
+  border-radius: 7px;
+  
+
+}
+
+
+
+/* Navigation Links Begin from here */
+
+.section2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #434242;
+  color: white;
+  height: 50px;
+}
+
+
+/* //Button Texest Designing */
+
+.nav-items li{
+  list-style: none;
+    position: relative;
+  background: transparent;
+
+  
+}
+
+.nav-items li a{
+text-decoration: none;
+font-size: 16px;
+
+color: white;
+
+}
+.nav-items li a::after{
+  content: "";
+  background: white;
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transform: scaleX(0);
+  transition: transform .5s;
+  transform-origin: left;
+
+}
+
+.nav-items li a:hover,.nav-items li a.active
+{
+  color:white;
+  transition: .5s ease; 
+}
+
+
+.nav-items li a:hover::after
+
+{
+  content: "";
+  background: white;
+  height: 3px;
+  width: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.nav-items{
+  width: 90%;
+  height: 100%;
+  
+
+}
+
+ .section2 .button-bars{
+  background: transparent;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 23px;
+  margin-left: 1rem;
+}
+
+.nav-items ul{
+  margin-left: auto;
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-items:space-evenly;
+align-items: center;
+
+}
+
+
+.nav-items ul li{
+
+  cursor: pointer;
+  width: 130px;
+  height: 35px;
+  display: flex;
+padding-left: 8px;
+justify-items:center;
+align-items: center;
+
+}
+
+.resp{
+ padding-top: 8px;
+  display: none;
+  cursor: pointer;
+  height: 45px  ;
+
+}
+.section2 .category {
+  height: 500px;
+  background: white;
+}
+.movable-div2{
+  transition: .7s ease;
+  border-radius: 20px;
+  position: absolute;
+  left: -400px;
+  top: 0px;
+}
+
+.box{
+  z-index: 99;
+  width: 340px;
+  height: 900px;
+  background-color: white;
+  color: #000;
+  left: 0;
+}
+.align{
+  display: flex;
+  flex-direction: row;
+  transition: .3s;
+  align-items: center;
+  justify-content: center;
+}
+.align:hover{
+  color: orangered;
+}
+.align p{
+  font-size: 15px;
+}
+.rating{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rating h1{
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 3px solid red;
+  color: black;
+  font-weight:700 ;
+  border-radius: 13px;
+  transition: .4s;
+}
+
+
+.category ul{
+  width: 235px;
+  height: 5%;
+ 
+  position: absolute;
+  top: 9.4%;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: .7s;
+
+}
+.category ul h1{
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 3px solid red;
+  color: black;
+  font-weight:700 ;
+  border-radius: 13px;
+  transition: .4s;
+}
+
+.category ul h1:hover{
+  background-color: rgb(192, 230, 230);
+}
+.category ul li{
+  color: #000;
+  
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+ 
+}
+.category ul li:hover{
+  font-weight: 600;
+  
+}
+.cross2{
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  display: block;
+}
+
+/* //Rating */
+.rating {
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.fas.fa-star {
+  color: gold; /* Filled star color */
+}
+
+.far.fa-star {
+  color: #ccc; /* Empty star color */
+}
+
+
+/* Adding Responsiveness */
+
+
+@media (max-width:768px) {
+
+  .cross{
+
+    display: block;
+  }
+
+ .section2{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .nav-items{
+    
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  .resp{
+    display: block;
+ 
+  }
+  .navbar{
+    padding: 0px;
+  }
+
+  .logo{
+    margin-left: 0rem;
+    width: 9%;
+    height: 60%;
+    
+  }
+  .input{
+    width:40%;
+    height: 60%;
+    
+  }
+  .cart-count{
+    bottom: 0;
+    right: 0px;
+    z-index: 99;
+  }
+  .nav-items ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .nav-items ul{
+    width: 235px;
+    height: 100%;
+    background: rgb(26, 25, 25);
+    position: absolute;
+    top: 0;
+    right: -240px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: .7s;
+  }
+
+  .nav-items ul li{
+    background-color: transparent;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+   
+  }
+  
+}

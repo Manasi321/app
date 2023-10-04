@@ -1,0 +1,150 @@
+#cart-container {
+  overflow-x: hidden;
+  
+}
+
+#cart-container table {
+  border-collapse: collapse;
+  width: 80%;
+ 
+  white-space: nowrap;
+  margin: auto;
+}
+#cart-container table thead {
+  height: 40px;
+  font-weight: 600;
+}
+#cart-container table thead td {
+  background: #666262;
+  color: #fff;
+  border: none;
+  
+}
+#cart-container table td {
+  border: 1px solid #888484;
+  text-align: center;
+}
+#cart-container table td:nth-child(1) {
+  width: 200px;
+}
+#cart-container table td:nth-child(2) {
+  width: 300px;
+}
+#cart-container table td:nth-child(3),
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5) {
+  width: 200px;
+}
+#cart-container table td:nth-child(6) {
+  width: 350px;
+}
+#cart-container table tbody img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 110px;
+  height: 90px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+#cart-container table tbody button {
+  width: 25px;
+}
+#cart-container table tbody button.ml-auto {
+  width: 60px;
+}
+#cart-container table tbody i {
+  color: black;
+  font-size: 100px;
+}
+
+#cart-bottom .Total > div {
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#cart-bottom .Total div > button {
+  height: 40px;
+  color: #fff;
+  background-color: #424141;
+  border: none;
+}
+
+#cart-bottom .Remove_All > div {
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cart-bottom .Remove_All div > button {
+  height: 40px;
+  color: #fff;
+  background-color: #424141;
+  border: none;
+}
+
+#cart-shop .Total > div {
+  height: 40px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#cart-shop .Total div > button {
+  height: 40px;
+  color: #fff;
+  background-color: #2e9abe;
+  border: none;
+}
+
+
+/* My styling Begins Form Here */
+
+#remove button:hover{
+  color: red;
+  background-color: white;
+  /* This class is not applying due to override rule */
+}
+
+.button{
+  margin-left: 38%;
+  margin-top: 38%;
+  border: none;
+  height: 50px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  transition: .5s ease;
+
+  /* this class applies */
+}
+.button:hover{
+  background-color: white;
+  color: black;
+
+    /* this again doesnt class applies */
+
+}
+
+.button4{
+ width: 130px;
+ height:80px;
+ border-radius: 4px;
+ transition: .4s ease;
+}
+
+
+
+/* Responsiveness to Cart */
+
+@media (max-width:493px) {
+  .table{
+    width: 100px;
+  }
+   td{
+    width: 30px;
+   }
+}

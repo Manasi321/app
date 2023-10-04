@@ -1,0 +1,38 @@
+<div>
+  <app-header (searchTextChanged)="onSearchTextEntered($event) ">
+  </app-header>
+</div>
+
+
+
+<div class="master">
+  <div class="row">
+    <div class="column" *ngFor="let pd of containProductArray ">
+      <div class="productBox" *ngIf="searchText=== '' || pd.productName.toLowerCase().includes(searchText)">
+        <img [src]="pd.productImg" height="180px" width="180px" class="img" />
+        <h3 class="special">Manufacturer: <span>{{ pd.productName }}</span></h3>
+        <p class="details">Details: <span>{{ pd.productDetail }}</span></p>
+        <p>Mobile-Weight: <span>{{ pd.productWeight }} gm</span></p>
+        <p>Price: <span>{{ pd.productPrice | currency: "INR" }}</span></p>
+        <!-- <button class="minusbtn btn-primary btn-block" (click)="dec(pd)">
+          -
+        </button>
+        <span
+          ><button>{{ pd.qnt }}</button></span
+        >
+        <button class="plusbtn btn-primary btn-block" (click)="inc(pd)">
+          +
+        </button> -->
+      
+         <div class="btn-box">
+          <button class="button" (click)="addCart(pd)" >
+            &nbsp; Add to Cart  &nbsp;
+          </button>
+         </div>
+        
+
+      
+      </div>
+    </div>
+  </div>
+</div>

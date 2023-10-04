@@ -1,0 +1,51 @@
+<nav class="navbar"  >
+ <div class="logo border2" routerLink="">
+     <img
+      src="../../assets/logo.jpg"
+      alt="Logo"
+      
+    />
+  </div>
+
+  <div class="input">
+    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+    <input [(ngModel)]="searchTerm" (keyup)="search($event)" type="text" placeholder="Search through Shopping Web " name="search">
+  </div>
+
+  <button
+  style=""
+    class="cart-button border2"
+    routerLink="cart"
+    routerLinkActive="activelink"
+  
+  >
+    <i style="font-size: 2rem;position: absolute;right: 5px; top: 20px;"  class="fa fa-shopping-cart bg-#fff"></i>
+    <div class="cart-count" style="position: absolute; bottom: 0; right: 0;"  class="badge bg-danger">{{ cartItem }}</div>
+  </button>
+ 
+</nav>
+
+
+
+<div style="overflow: hidden;">
+  <section style="color: white; padding-left: 150px; padding-top: 10px; overflow-x: hidden;" class="section2">
+    <div class="nav-items" >
+      <ul #movableDiv  class="movable-div" style=" z-index: 99;display: none;">
+        <div (click)="myFunction2()" class="cross">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <li ><a >Home</a ></li>
+        <li ><a >About us</a ></li>
+        <li ><a >Cart Page</a ></li>
+        <li ><a >New Arrivals</a ></li>
+        <li ><a >Sales</a ></li>
+        <li ><a >Shop History</a ></li>
+      </ul>
+  
+      <div class="resp border2" style="   color: white;  position: absolute; right: 25px;top: 78px; height: 40px;" (click)="myFunction()" >
+          <p>Menu Items</p>
+      </div>
+    </div>
+   
+  </section>
+</div>
